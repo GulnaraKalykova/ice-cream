@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  height: 0;
+}
+
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+.container-ice {
+  /* border: 3px solid red; */
+  width: 400px;
+  height: 500px;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+.container-scoop {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.scoop1 {
+  width: 140px;
+  height: 140px;
+  background-color: #cd1f9f;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 134px;
+  background-size: 40px 120px;
+  background-image: radial-gradient(
+    circle at 20px 12px,
+    #ff5722 20px,
+    red,
+    transparent 25px
+  );
+  /** transparent - наследование цвета от родительского класса*/
+}
+
+.scoop2 {
+  width: 140px;
+  height: 140px;
+  background-color: #badc58;
+  border-radius: 50%;
+  position: absolute;
+  top: 92px;
+  left: 185px;
+}
+
+.scoop3 {
+  width: 140px;
+  height: 140px;
+  background-color: #ffc107;
+  border-radius: 50%;
+  position: absolute;
+  background-size: 25px 80px;
+  background-image: radial-gradient(
+    circle at 12.5px 17px,
+    #5c0003 20px,
+    transparent 21px
+  );
+  top: 93px;
+  left: 64px;
+}
+
+.cup_ice-cream {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  background-color: rgb(70, 209, 209);
+  border: none;
+}
+
+.cup-up {
+  width: 300px;
+  height: 15px;
+  border-radius: 15px;
+}
+.cup {
+  width: 250px;
+  height: 80px;
+  background-color: rgb(181, 230, 230);
+  border-radius: 0px 15px 150px 150px;
+}
+.cup-foot {
+  width: 30px;
+  height: 30px;
+}
+.cup-down {
+  width: 150px;
+  height: 40px;
+  background-color: rgb(181, 230, 230);
+  border-radius: 160px 160px 15px 0px;
+}
+
+.line {
+  width: 400px;
+  margin-top: 20px;
+  border-top: 2px dashed #808080;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 15px;
+  /* border-top: 2px dashed #040480; */
+}
+
+.btn select {
+  width: 30%;
+  padding: 4px 6px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background-color: rgb(187, 38, 187);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn button {
+  width: 150px;
+  padding: 12px 0;
+  border-radius: 20px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background-color: rgb(187, 38, 187);
+  color: #ffffff;
+  cursor: pointer;
+}

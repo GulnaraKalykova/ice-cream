@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Ice-cream.Home-work-12</title>
+  </head>
+
+  <!-- todo Домашнее задание к уроку 12 по верстке. -->
+  <!-- *Сверстать вазочку с мороженым (можно сделать свой дизайн). При помощи js можно выбирать вкус мороженого (клубника, шоколад и тд). Соответствующий шарик будет окрашиваться в цвет выбранного вкуса. Например, если для первого шарика выбрать шоколадный вкус, то он окрасится в коричневый цвет, если выбрать клубничный вкус, то в розовый цвет и тд. -->
+
+  <body>
+    <div class="container">
+      <div class="container-ice">
+
+        <div class="container-scoop">
+          <div class="scoop1"></div>
+          <div class="scoop2"></div>
+          <div class="scoop3"></div>
+        </div>
+        
+        <!-- ! стаканчик для ice-cream -->
+        <div class="cup_ice-cream">
+          <!--* Вверхний край -->
+          <input class="cup-up"></input>
+          <!--* Чашка -->
+          <input class="cup"></input>
+          <!--* Ножка -->
+          <input class="cup-foot"></input>
+          <!--* Нижний край -->
+          <input class="cup-down"></input>  
+        </div>
+
+        <div class="line"></div>
+
+        <!-- ! шарики scoop-ice-cream start -->
+        <div class="btn">
+          <select id="btn-scoop1">
+            <option hidden="Шарик1">Шарик1</option>
+            <option value="strawberry">Клубника</option>
+            <option value="pistachio">Фисташка</option>
+            <option value="lavanda">Lavanda</option>
+          </select>
+
+          <select id="btn-scoop2">
+            <option hidden>Шарик2</option>
+            <option value="raspberry">Малина</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="melon">Дыня</option>
+          </select>
+
+          <select id="btn-scoop3">
+            <option hidden>Шарик3</option>
+            <option value="blueberry">Черника</option>
+            <option value="vanilla">Vanilla</option>
+            <option value="banana">Банан</option>
+          </select>
+
+          <!-- ! Выбор topping start -->
+          <button id="btn-topping1">Топпинг 1</button>
+          <button id="btn-topping2">Топпинг 2</button>
+        
+      </div>
+
+    </div>
+  </body>
+</html>
+
